@@ -5,19 +5,19 @@ const initialState = {
     {
       id: "1",
       title: "Trip to Delhi",
-      category: "Nagarro trip",
+      category: "Nagarro Trip",
       description: " A visit to a historical city is always an exciting experience. It is a fascinating adventure. I had one such experience during the last summer vacations, when I visited Delhi.New Delhi is the capital of India. ",
     },
     {
       id: "2",
       title: "Trip to Kolkata",
-      category: "Nagarro trip",
+      category: "Nagarro Trip",
       description: " It was a great trip. I had a lot of fun!!",
     },
     {
       id: "3",
       title: "Trip to Mumbai",
-      category: "Nagarro trip",
+      category: "Nagarro Trip",
       description: " It was a great trip. I had a lot of fun!!",
     },
   ],
