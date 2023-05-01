@@ -21,3 +21,33 @@ You may also see any lint errors in the console.
 ### Default Home Page
 
 ![Alt text](https://github.com/PiyushSharma99/BlogPostWebApp/blob/main/images/1-HomePage.png)
+
+### Add Blog Page
+
+![Alt text](https://github.com/PiyushSharma99/BlogPostWebApp/blob/main/images/2-AddBlogPage.png)
+
+### Add Blog Page Filled
+
+![Alt text](https://github.com/PiyushSharma99/BlogPostWebApp/blob/main/images/3-AddBlogPageFilled.png)
+
+### Home Page Updated
+
+![Alt text](https://github.com/PiyushSharma99/BlogPostWebApp/blob/main/images/4-HomePageUpdated.png)
+
+### Blog Details Page
+
+![Alt text](https://github.com/PiyushSharma99/BlogPostWebApp/blob/main/images/5-BlogDetailsPage.png)
+
+### Edit Page
+
+![Alt text](https://github.com/PiyushSharma99/BlogPostWebApp/blob/main/images/6-EditPage.png)
+
+### Blog Details Page Updated
+
+![Alt text](https://github.com/PiyushSharma99/BlogPostWebApp/blob/main/images/7-BlogDetailsPageUpdated.png)
+
+### Default Home Page Updated
+
+![Alt text](https://github.com/PiyushSharma99/BlogPostWebApp/blob/main/images/8-HomePageUpdated.png)
+
+
