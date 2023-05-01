@@ -1,0 +1,18 @@
+.container {
+      /* font-family: arial; */
+      /* font-size: 24px; */
+      /* margin: 25px; */
+      /* width: auto;
+      height: auto; */
+      /* outline: dashed 1px black; */
+      /* Center vertically and horizontally */
+      /* display: flex; */
+      width: 40%;
+      height: 10em;
+      position: relative ;
+      /* max-width: 696px; */
+      justify-content: center;
+      align-items: center;
+    }
+ 
+  
