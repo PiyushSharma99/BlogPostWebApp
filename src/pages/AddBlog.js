@@ -139,6 +139,7 @@ const AddPage = () => {
                     required
                     type="text"
                     placeholder="Enter category"
+                    autocomplete="off"
                   />
                   <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                   <Form.Control.Feedback type="invalid">
@@ -157,14 +158,7 @@ const AddPage = () => {
                     placeholder="Describe about your experience..."
                     required
                   />
-                  {/* <textarea
-                    class="form-outline"
-                    placeholder="Leave a comment here"
-                    id="floatingTextarea2"
-                    style={{
-                      height: "100px",
-                    }}
-                  ></textarea> */}
+            
 
                   <Form.Control.Feedback type="invalid">
                     Please provide some story :(
@@ -181,7 +175,7 @@ const AddPage = () => {
   );
 };
 
-{
+// {
   /* <form onSubmit={handleSubmit}>
       <label htmlFor="title">Title:</label>
       <input type="text" id="title" name="title" />
@@ -197,6 +191,6 @@ const AddPage = () => {
       <br />
       <button type="submit">Add Blog</button>
     </form> */
-}
+// }
 
 export default AddPage;
