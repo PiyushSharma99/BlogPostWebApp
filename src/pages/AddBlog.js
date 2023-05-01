@@ -80,11 +80,11 @@ const AddPage = () => {
         // key={blogUnit.id}
         text={"dark"}
         style={{
-          width: "50rem",
+          width: "70rem",
           justifyContent: "center",
           position: "relative",
           top: "50%",
-          left: "20%",
+          left: "15%",
           marginBottom: "25px",
 
           className: "mb-2",
@@ -103,7 +103,19 @@ const AddPage = () => {
             bulk of the card's content.
             {blogUnit.description}
           </Card.Text> */}
-          <div className="mx-auto col-10 col-md-8 col-lg-6">
+          <div
+            className="mx-auto col-12  col-lg-12"
+            style={{
+              width: "70rem",
+              justifyContent: "center",
+              position: "relative",
+              top: "50%",
+              left: "7%",
+              marginBottom: "25px",
+
+              className: "mb-2",
+            }}
+          >
             <Form noValidate validated={validated} onSubmit={handleSubmit}>
               <Row className="mb-3">
                 <Form.Group as={Col} md="10" controlId="title">
@@ -139,10 +151,21 @@ const AddPage = () => {
                 <Form.Group as={Col} md="10" controlId="description">
                   <Form.Label>Description</Form.Label>
                   <Form.Control
+                    as="textarea"
+                    rows={3}
                     type="text"
                     placeholder="Describe about your experience..."
                     required
                   />
+                  {/* <textarea
+                    class="form-outline"
+                    placeholder="Leave a comment here"
+                    id="floatingTextarea2"
+                    style={{
+                      height: "100px",
+                    }}
+                  ></textarea> */}
+
                   <Form.Control.Feedback type="invalid">
                     Please provide some story :(
                   </Form.Control.Feedback>
