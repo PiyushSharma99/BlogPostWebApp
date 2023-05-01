@@ -18,4 +18,4 @@ You may also see any lint errors in the console.
 
 ## Product Images
 
-![plot](C:\Users\Dell\Pictures)
+![Alt text](https://github.com/PiyushSharma99/BlogPostWebApp/blob/main/images/1-HomePage.png)
