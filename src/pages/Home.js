@@ -9,7 +9,7 @@ const Home = () => {
   const colors = ["Primary", "Secondary", "Danger", "Warning", "Info"];
   return (
     <>
-      <h2 style={{ justifyContent: "center", textAlign: "center" }}>
+      <h2 style={{ justifyContent: "center", textAlign: "center",marginBottom: '25px' }}>
         Blog Posts
       </h2>
 
@@ -28,7 +28,7 @@ const Home = () => {
             justifyContent: "center", 
             position: 'relative',
             top: '50%',
-            left: '20%',
+            left: '25%',
             marginBottom: '25px',
             
             className:'mb-2'}}

@@ -1,6 +1,5 @@
 import { createBrowserRouter, RouterProvider} from 'react-router-dom'
 import Home from './pages/Home';
-import Blogs from './pages/old/Blogs';
 import BlogDetails from './pages/BlogDetails';
 import AddBlog from './pages/AddBlog';
 import EditBlog from './pages/EditBlog';
@@ -19,7 +18,7 @@ const router = createBrowserRouter([
     children: [
 
       {path:'/', element:<Home/>},
-      {path:'/blogs', element:<Blogs/>},
+      
       {path:'/blog-details/:id', element:<BlogDetails/>},
       {path:'/add-blog', element:<AddBlog />},
       {path:'/edit-blog/:id', element:<EditBlog/>},
