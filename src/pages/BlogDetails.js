@@ -1,15 +1,7 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
-import { Link } from "react-router-dom";
-import {
-  selectBlogById,
-  getMemoizedNumItems,
-  updateBlog,
-  deleteBlog,
-  toggleLike,
-  selectItemsByCategory,
-} from "../store/blogSlice";
+import { selectBlogById, deleteBlog } from "../store/blogSlice";
 import Card from "react-bootstrap/Card";
 import { Button } from "react-bootstrap";
 import { LikesContext } from "../context/like-context";
@@ -21,7 +13,7 @@ import { FaHeart, FaRegHeart } from "react-icons/fa";
 
 const BlogDetails = () => {
   // const ctx = useContext(LikeContext);
-  const [isLiked, setIsLiked] = useState(false);
+
   const { id } = useParams();
   console.log(id);
   const blogUnit = useSelector((state) => selectBlogById(state, id));
@@ -45,19 +37,21 @@ const BlogDetails = () => {
 
   const likeButton = (
     <Button bg="light" variant="danger" onClick={handleLikeClick}>
-      {likes[id] ? (<> 'Liked' <FaHeart /></>) : (<> 'Like' <FaRegHeart /></>)}
+      {likes[id] ? (
+        <>
+          {" "}
+          'Liked' <FaHeart />
+        </>
+      ) : (
+        <>
+          {" "}
+          'Like' <FaRegHeart />
+        </>
+      )}
     </Button>
   );
   const handleEdit = (id) => {
     navigate(`/edit-blog/${id}`);
-  };
-
-  // const handleLike = () => {
-  //   dispatch(toggleLike(id));
-  // };
-
-  const handleBack = () => {
-    navigate("/");
   };
 
   return (
@@ -68,14 +62,11 @@ const BlogDetails = () => {
         variant="dark"
         onClick={() => navigate("/")}
         style={{
-          
           justifyContent: "center",
           position: "relative",
           top: "50%",
           left: "10%",
           marginBottom: "25px",
-
-          
         }}
       >
         {/* <Link to="/" style={{ textDecoration: "none" }}> */}
@@ -126,7 +117,27 @@ const BlogDetails = () => {
         </Card.Header>
 
         <Card.Body>
-          <Card.Title>{blogUnit.title}</Card.Title>
+          <Card.Title>
+            <div>
+              <div
+                style={{
+                  marginRight: "25px",
+                  color: "#B2BEB5",
+                  textAlign: "center",
+                }}
+              >
+                {blogUnit.category}
+              </div>
+              <div>{blogUnit.title}</div>
+            </div>
+
+            {/* <div style={{
+              marginRight: "25px",
+              color: "#B2BEB5",
+              gap: "10px 2em",
+            }}></div> */}
+          </Card.Title>
+
           <Card.Text>
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
@@ -139,16 +150,3 @@ const BlogDetails = () => {
 };
 
 export default BlogDetails;
-
-{
-  /* <button onClick={handleBack}>BACK</button>
-      Length of blogs array = {blogs.length}
-      <div>{blogUnit.title}</div>
-      <div>{blogUnit.category}</div>
-      <div>{blogUnit.description}</div>
-      <button onClick={() => handleDelete(blogUnit.id)}>Delete</button>
-      <button onClick={() => handleEdit(blogUnit.id)}>Edit</button>
-      <button onClick={() => handleLike(blogUnit.id)}>
-        {blogUnit.liked ? "Unlike" : "Like"}
-      </button> */
-}
